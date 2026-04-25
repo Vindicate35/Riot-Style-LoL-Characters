@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ercan Karakuyulu – Çevrimiçi Şövalye / Efsane | Champion Reveal</title>
+  <style>
+    :root{
+      --bg:#0a0f14;          /* Riot koyu zemin */
+      --panel:#0f1620;       /* kart zemini */
+      --muted:#9fb0c3;       /* ikincil metin */
+      --border:1px solid rgba(255,255,255,.08);
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.45);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:#e6edf5;font:16px/1.5 system-ui,Segoe UI,Roboto,Inter,-apple-system,sans-serif}
+    a{color:#9fd1ff;text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:28px}
+    .hero{position:relative;border:var(--border);border-radius:var(--radius);overflow:hidden;background:linear-gradient(180deg,rgba(255,138,0,.06),rgba(78,193,255,.06))}
+    .hero img{display:block;width:100%;height:auto;}
+    .hero .titlewrap{position:absolute;left:24px;bottom:24px;right:24px;background:linear-gradient(180deg,rgba(10,15,20,0) 0%,rgba(10,15,20,.75) 60%,rgba(10,15,20,.95) 100%);padding:18px 18px 14px;border-radius:14px}
+    h1{margin:0 0 6px;font-weight:800;font-size:36px;letter-spacing:.3px}
+    .subtitle{margin:0;color:var(--muted)}
+    .meta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}
+    .card{background:var(--panel);border:var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.06);border:var(--border);border-radius:999px;padding:6px 12px;font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .skin img{width:100%;height:auto;border-radius:14px;border:var(--border)}
+    .skin h3{margin:12px 0 6px}
+    .note{color:#e6edf5;font-size:14px}
+    .general{margin-top:26px}
+    .abilities{margin-top:26px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .poster{margin-top:26px;display:grid;gap:18px}
+    .poster .row{display:grid;grid-template-columns:2fr 1fr;gap:18px}
+    
+    footer{margin:28px 0 12px;color:var(--muted);font-size:12px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0c121a;border:var(--border);padding:2px 6px;border-radius:6px}
+    
+    body {
+      margin: 0;
+      font-family: "Segoe UI", serif;
+      background-color: #0a0a0c;
+      color: #ddd;
+      line-height: 1.6;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+      opacity: 0.9;
+    }
+
+    header h1 {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3rem;
+      color: #f0e6d2;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .ability {
+      display: flex;
+      align-items: flex-start;
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      border-left: 4px solid #9fd1ff;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .ability img {
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+      border: 2px solid #9fd1ff;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .ability:hover {
+      background: rgba(159,209,255,0.15);
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(159,209,255,0.4);
+    }
+
+    .ability:hover img {
+      transform: scale(1.1);
+      border-color: #9fd1ff;
+    }
+    
+    .ability:hover h2 {
+      color: #9fd1ff;
+      text-shadow: 0 0 8px rgba(159,209,255,0.8);
+      transition: all 0.3s ease;
+    }
+
+    .ability h2 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #9fd1ff;
+    }
+
+    .ability p {
+      margin: 10px 0 0;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HERO / MAIN SPLASH  -->
+    <section class="hero">
+      <!-- Değiştirin: ana splash görselinizin yolu -->
+      <img src="assets/ercan_default_split.png" alt="Ercan Karakuyulu – İkili Form Splash" />
+      <div class="titlewrap">
+        <h1>Ercan Karakuyulu – Çevrimiçi Şövalye / Efsane</h1>
+        <p class="subtitle">Dövüşçü / Hibrit Büyücü · Karma Hasar (AP+AD) · Zorluk: Yüksek</p>
+      </div>
+    </section>
+    
+    <!-- POSTER BLOCK -->
+    <section class="poster">
+      <div class="card">
+        <h3>Arka Plan Hikâyesi</h3>
+        <p>Ercan Karakuyulu, sıradan bir oyuncunun ötesinde; günlerini pazarlarda alışveriş yaparak, gecelerini ise sanal savaş meydanlarında geçirir. Çevrimiçi dünyalar onun için sadece bir oyun değildir: orada hem bir Şövalye, hem de bir Efsane olabilir.
+Şövalye olduğunda takımını savunur, disiplinli bir lider gibi hareket eder. Ama Efsane olduğunda, kuralları kendi lehine çevirir; rakiplerini provoke eder, gücünü dostlarının hatalarından bile besler. Ancak bu seçim ikilemlidir: Bir formu seçtiğinde diğerinin tüm özelliklerinden vazgeçer.
+Onu benzersiz kılan şey ise her savaşta sadece rakiplerini değil, aynı zamanda kaderini de şekillendirmesidir.</p>
+      </div>
+    </section>
+
+    <!-- META -->
+    <section class="meta">
+      <div class="card">
+        <div class="badge">Rol</div>
+        <h3 style="margin:8px 0 4px">Dövüşçü, Hibrit Büyücü</h3>
+        <p class="note">Takım savaşı başlatır, cezalandırır ve alan kontrolü sağlar.</p>
+      </div>
+      <div class="card">
+        <div class="badge">Hasar Türü</div>
+        <h3 style="margin:8px 0 4px">Karma – AP + AD</h3>
+        <p class="note">Form seçimine ve eşyaya bağlı ölçeklenir.</p>
+      </div>
+      <div class="card">
+        <div class="badge">Zorluk</div>
+        <h3 style="margin:8px 0 4px">Yüksek</h3>
+        <p class="note">“Ercan’ın asıl gücü, iki kimliğinde gizli. Bir yanda disiplinli bir şövalye, diğer yanda kuralsız bir efsane. Hangisini seçtiğin, savaşın kaderini belirler.”</p>
+      </div>
+    </section>
+
+    <!-- SKIN GRID -->
+    <section class="grid">
+      <article class="skin card">
+        <img src="assets/ercan_knight_solo.png" alt="Çevrimiçi Şövalye – Solo Splash" />
+        <h3>Versiyon 1 – Çevrimiçi Şövalye</h3>
+        <p class="note">Ercan'ın düzgün komut veren, planlaması sağlam olan, nispeten daha başarılı formu.</p>
+      </article>
+      <article class="skin card">
+        <img src="assets/ercan_legend_solo.png" alt="Çevrimiçi Efsane – Solo Splash" />
+        <h3>Versiyon 2 – Çevrimiçi Efsane</h3>
+        <p class="note">Ercan'ın farklı alanlarda başarılı olduğu formu.</p>
+      </article>
+    </section>
+    
+    <!-- GENERAL -->
+    <section class="general card">
+      <h2 style="margin:0 0 10px">Genel Özellikler ve Oynanış</h2>
+      <p>Şampiyonlardan yük toplayarak Şövalye'ye veya Efsane'ye dönüşür. Birine dönüştükten sonra diğerinin özelliklerini kaybeder.</p>
+    </section>
+    
+    <!-- ABILITIES -->
+    <section class="abilities card">
+      <h2 style="margin:0 0 10px">Yetenek Seti</h2>
+      <div class="ability">
+        <img src="assets/icons/passive.png" alt="Passive"/>
+        <div>
+          <h2>PASİF - TÜCCAR / PARA AVCISI</h2>
+          <p>Ercan, gün sonunda karakteri pazara bırakır ve özel olarak hazırladığı eşyaları satışa sunar. Sattığı her eşya için ilave altın kazanır.
+            <br><strong>Şövalye:</strong> Sattığı her 10 eşya için 2 kat fazla altın kazanır. 
+            <br><strong>Efsane:</strong> 10 saniye başına +3 altın kazanmaya başlar. (ilerleyen seviyelerdeki artışla doğru orantılı olacak şekilde artar)</p>
+        </div>
+      </div>
+      
+      <div class="ability">
+      <div>
+          <h2>Q YETENEĞİ</h2>
+          <p>Mana Bedeli: 40/50/60/70/80 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bekleme Süresi: 9/8/7/6/5 sn
+          
+          Ercan, rakibini 1 saniyeliğine sersemletir ve ona <strong>10/35/60/85/110 + 0.35 yetenek gücü</strong> büyü hasarı verir.</p> 
+      <br>
+      <div class="split">
+        <h2>ŞÖVALYE Q - İNME GİBİ (DESCENT)</h2>
+        <h2>EFSANE Q - AĞLAYACAKSAN OYNAMAYALIM</h2>
+        <img src="assets/icons/knightq.png" alt="Q-Şövalye"/>
+        <img src="assets/icons/legendq.png" alt="Q-Efsane"/>
+        <div>
+            <p>Ercan, bir takım arkadaşının hemen arkasına ışınlanır, onun en yakınındaki 2 rakibi 0.5 saniye sersemletir ve o kişilere <strong>20/45/70/95/120 + 0.4 yetenek gücü</strong> büyü hasarı verir.</p>
+        </div>
+        <div>
+            <p>Ercan, rakibini efsaneliğiyle 2 saniyeliğine kışkırtır ve rakibine <strong>15/40/65/90/115 + %1.5 ilave can</strong> kadar büyü hasarı verir.</p> 
+        </div>
+      </div>
+      </div>
+    </div>
+      
+      <div class="ability">
+      <div>
+          <h2>W YETENEĞİ</h2>
+          <p>Mana Bedeli: 60/70/80/90/100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bekleme Süresi: 16/15/14/13/12 sn
+          
+          Ercan, orta direk bir klana komut verirken kendisi ve takım arkadaşlarına <strong>20/25/30/35/40 zırh ve büyü direnci</strong> kazandırır.</p>
+      <br>
+      <div class="split">
+        <h2>ŞÖVALYE W - DOĞUŞTAN KOMUTÇU</h2>
+        <h2>EFSANE W - BARZO GİRİŞİ</h2>
+        <img src="assets/icons/knightw.png" alt="W-Şövalye"/>
+        <img src="assets/icons/legendw.png" alt="W-Efsane"/>
+        <div>
+            <p>Ercan, oldukça geniş bir klana komut verebilir ve savaş kazanma yüzdesini %30 arttırır.; ayrıca <strong>5/20/35/50/65 saldırı gücü</strong> kazanır.</p>
+        </div>
+        <div>
+            <p>Ercan, bir efsane olmaya karar verir ve gördüğü her pozisyona barzo gibi atlar; takım arkadaşlarına kazandırdığı değerler <strong>30/35/40/45/50</strong> 'ye yükselir.</p>
+        </div>
+        </div>
+       </div>
+      </div>
+      
+      <div class="ability">
+      <div>          
+          <h2>E YETENEĞİ</h2>
+          <p>Mana Bedeli: 40/60/80/100/120 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bekleme Süresi: 24/22/20/18/16 sn
+          
+          Ercan, takım arkadaşlarına flame atar ve bu sırada ek özellikler kazanır.</p>
+      <br>
+      <div class="split">
+        <h2>ŞÖVALYE E - EMMANUEL TOWN AT</h2>
+        <h2>EFSANE E - AYDIN FEEDLEME ARTIK</h2>
+        <img src="assets/icons/knighte.png" alt="E-Şövalye"/>
+        <img src="assets/icons/legende.png" alt="E-Efsane"/>
+        <div>
+            <p>Ercan, klandaki insanları kontrol ederken yoldan çıkan veya afk kalanları tespit ederek her kişi başına <strong>0.5 saldırı gücü, yetenek gücü, zırh ve büyü direnci</strong> kazanır.</p>     
+        </div>
+        <div>
+            <p>Ercan, Aydın ile iddiaya girer ve onun statlarını kendine bağlar. Aydın'ın her ölümünde Ercan 150 saniyeliğne <strong>Aydının temel özelliklerinin (maksimum can, saldırı gücü, yetenek gücü, 
+toplam saldırı hızı, zırh ve büyü direnci) %1/3/6/10/15</strong> ini çalarak süre boyunca onları kullanabilir.</p>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      <div class="ability">
+      <div>        
+          <h2>R YETENEĞİ</h2>
+          <p>Mana Bedeli: 100/100/100 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Bekleme Süresi: 130/110/90 sn
+          
+          Ercan, alan etkili yüksek hasarlı/sersemleten bir büyü ile rakiplerini alaşağı eder ve onlara <strong>150/250/350 + 0.8 yetenek gücü</strong> hasar verir.</p> 
+      <br>
+      <div class="split">
+        <h2>ŞÖVALYE R - SÜPER NOVA</h2>
+        <h2>EFSANE R - GÜNEŞ PATLAMASI</h2>
+        <img src="assets/icons/knightr.png" alt="R-Şövalye"/>
+        <img src="assets/icons/legendr.png" alt="R-Efsane"/>
+        <div>
+          <p>Ercan, komut verdiği insanların da gücünü kullanarak geniş bir alana parlaklığı giderek artan patlamalı bir yıldız fırlatır ve alan içindeki rakiplerine <strong>200/350/500 + 1.0 yetenek gücü</strong> hasar verir.</p> 
+        </div>
+        <div>
+          <p>Ercan, ailesine yardım ederken uzun mesafeler katetmesi sonucu vücudunda depoladığı güneşin enerjisini geniş bir alana salarak rakiplerine <strong>175/275/375 + 0.9 yetenek gücü</strong> hasar verir.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+   </section>
+
+    <footer>
+      <div>© 2025 Fan-Made Reveal · by Vindicate</div>
+    </footer>
+  </div>
+</body>
+</html>
